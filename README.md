@@ -1,5 +1,7 @@
 # SuperCalc
 Resolvendo seus problemas matematicos...
+## Atualização:
+* Implementei a lib Math no codigo,  para baixar e so digitar pip install python-math em seu terminal. Em breve novas atualizações.
 
 ## Objetivos:
 ##### Essa ferramenta serve para resolver e entregar o resultado  e a conta do seu problema matematico..
