@@ -26,4 +26,10 @@ Resolvendo seus problemas matematicos...
 * Porcentagem de perda de peso
 >  Primeiramente voce deve digitar seu peso inicial, logo depois seu peso atual.
 
+* Porcentagem
+> Primeiro digite o  valor da porcentagem depois o valor do numero que voce deseja tirar a porcentagem.
+
+* Teorema de Pitagoras
+> Basta digitar o numero do cateto B e do cateto C e assim tera o valor da hipotenusa.
+
 #  Em breve novos calculos...
