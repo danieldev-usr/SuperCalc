@@ -1,7 +1,10 @@
 # SuperCalc
 Resolvendo seus problemas matematicos...
 ## Atualização:
-* Implementei a lib Math no codigo,  para baixar e so digitar pip install python-math em seu terminal. Em breve novas atualizações.
+#### Implementação da lib Math
+> Como instalar:
+* Abra seu terminal e digite: 
+`pip install python-math`
 
 ## Objetivos:
 ##### Essa ferramenta serve para resolver e entregar o resultado  e a conta do seu problema matematico..
