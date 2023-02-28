@@ -118,7 +118,7 @@ while True:
         print(f"{calc22} x 100 = {calc33}%")
         print(" ")
 
-    elif x == "00":
+    elif x == "07":
         print(" ")
         print("""
         [1] Metro cubico para Decimetro cubico (m3/dm3)
