@@ -1,40 +1,68 @@
-# SuperCalc
-Resolvendo seus problemas matematicos...
-## Atualização:
-#### Implementação da lib Math
-> Como instalar:
-* Abra seu terminal e digite: 
-`pip install python-math`
+# Calculadora Python
 
-## Objetivos:
-##### Essa ferramenta serve para resolver e entregar o resultado  e a conta do seu problema matematico..
-##### Por enquanto  temos poucas opções, mas essa ferramenta esta em constante atualização!
+Esta é uma calculadora Python simples que permite realizar várias operações matemáticas. A calculadora tem as seguintes funções:
 
-# Como usar:
+## Funções da Calculadora
 
+### 01 - Somar volume de um cubo
 
-* Somando volume de um cubo
-> Voce deve digitar os valores do cubo (A, B, C), e o programa faz o resto.
+Esta função permite calcular o volume de um cubo. Você deve fornecer os valores dos lados A, B e C do cubo.
 
-* Somando o volume de um prisma
-> Voce  deve digitar os  valores do prisma, que e os dois valores da area base e altura do prisma.
+### 02 - Somar volume de um prisma (3 valores)
 
-* Somando o volum de um cilindro
->  Voce deve digitar os valores do cilindro, que e o raio e a altura (O PI ja vem no codigo!!!).
+Esta função permite calcular o volume de um prisma. Você deve fornecer os valores das duas bases e a altura do prisma.
 
-* Somar massa (Newton)
-> Voce deve digitar o volume e a densidade do objeto, futuramente irei implementar o calculo para saber a densidade.
+### 03 - Somar volume de um cilindro
 
-* Somar gastos eletricos  (KwH)
-> Voce  deve digitar os Watts do seu aparelho e as horas que voce usar ele por dia, logo depois o preço do watt na sua região.
+Esta função permite calcular o volume de um cilindro. Você deve fornecer o valor do raio e da altura do cilindro.
 
-* Porcentagem de perda de peso
->  Primeiramente voce deve digitar seu peso inicial, logo depois seu peso atual.
+### 04 - Somar massa (Newton)
 
-* Porcentagem
-> Primeiro digite o  valor da porcentagem depois o valor do numero que voce deseja tirar a porcentagem.
+Esta função permite calcular a soma de duas massas em Newton.
 
-* Teorema de Pitagoras
-> Basta digitar o numero do cateto B e do cateto C e assim tera o valor da hipotenusa.
+### 05 - Somar gastos elétricos (KwH)
 
-#  Em breve novos calculos...
+Esta função permite calcular os gastos elétricos mensais com base no consumo de um aparelho em Watts, tempo de uso diário e custo por KwH.
+
+### 06 - Somar porcentagem da perda de peso
+
+Esta função permite calcular a porcentagem de perda de peso com base no peso inicial e peso atual.
+
+### 07 - Transformação de medidas (Nao funcional...)
+
+Esta função permite realizar transformações de medidas. No entanto, esta função ainda não está funcionando corretamente.
+
+### 08 - Porcentagem
+
+Esta função permite calcular a porcentagem de um valor.
+
+### 09 - Teorema de Pitágoras
+
+Esta função permite calcular a hipotenusa de um triângulo retângulo com base nos catetos.
+
+## Instruções de Uso
+
+1. Execute o script em um ambiente Python 3.7 ou superior.
+
+2. Siga as instruções apresentadas no terminal.
+
+3. Digite o número correspondente à função desejada.
+
+4. Insira os valores solicitados para realizar o cálculo.
+
+5. O resultado será exibido no terminal.
+
+## Contato
+
+Para dúvidas, feedbacks ou relatar erros, você pode entrar em contato com o criador da calculadora:
+
+- Instagram: @metalheadkkkk
+
+- Telegram: @BaalZevuv6
+
+- Email: zdanxhacking@gmail.com
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Para mais informações, consulte o arquivo LICENSE.md.
+
