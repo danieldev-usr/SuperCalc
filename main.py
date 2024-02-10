@@ -1,23 +1,96 @@
 from ast import Pow
 import os
 import time
-
 import math
 
+#nao sei pq mas achei melhor jogar aqui em cima kkk
+
+def resolver_equacao_quadratica(a, b, c):
+    discriminante = b**2 - 4*a*c
+
+    if discriminante > 0:
+        x1 = (-b + math.sqrt(discriminante)) / (2*a)
+        x2 = (-b - math.sqrt(discriminante)) / (2*a)
+        return f"Duas raízes reais distintas: x1 = {x1}, x2 = {x2}"
+    elif discriminante == 0:
+        x = -b / (2*a)
+        return f"Uma raiz real dupla: x = {x}"
+    else:
+        parte_real = -b / (2*a)
+        parte_imaginaria = math.sqrt(abs(discriminante)) / (2*a)
+        return f"Duas raízes complexas conjugadas: x1 = {parte_real} + {parte_imaginaria}i, x2 = {parte_real} - {parte_imaginaria}i"
+
+def transformacao_de_medidas():
+    print(f""" {green}
+    [1] Metro cúbico para Decímetro cúbico (m³/dm³)
+    [2] Centímetro cúbico para Milímetro cúbico (cm³/mm³)
+    [3] Decímetro cúbico para Milímetro cúbico (dm³/mm³)
+    [4] Mililitro para Litro (ml/l)
+    [5] Litro para Centilitro (l/cl)
+    [6] Litro para Mililitro (l/ml)
+    [7] Metro cúbico para Litro (m³/l)
+    [8] Decímetro cúbico para Litro (dm³/l)
+    [9] Centímetro cúbico para Mililitro (cm³/ml)
+    """)
+
+    opcao = input(f"{red}Digite a opção desejada: ")
+
+    if opcao == '1':
+        metros_cubicos = float(input("Digite o valor em metros cúbicos: "))
+        decimetros_cubicos = metros_cubicos * 1000
+        print(f"{metros_cubicos} m³ equivale a {decimetros_cubicos} dm³")
+
+    elif opcao == '2':
+        centimetros_cubicos = float(input("Digite o valor em centímetros cúbicos: "))
+        milimetros_cubicos = centimetros_cubicos * 1000
+        print(f"{centimetros_cubicos} cm³ equivale a {milimetros_cubicos} mm³")
+
+    elif opcao == '3':
+        decimetros_cubicos = float(input("Digite o valor em decímetros cúbicos: "))
+        milimetros_cubicos = decimetros_cubicos * 1000
+        print(f"{decimetros_cubicos} dm³ equivale a {milimetros_cubicos} mm³")
+
+    elif opcao == '4':
+        mililitros = float(input("Digite o valor em mililitros: "))
+        litros = mililitros / 1000
+        print(f"{mililitros} ml equivale a {litros} l")
+
+    elif opcao == '5':
+        litros = float(input("Digite o valor em litros: "))
+        centilitros = litros * 100
+        print(f"{litros} l equivale a {centilitros} cl")
+
+    elif opcao == '6':
+        litros = float(input("Digite o valor em litros: "))
+        mililitros = litros * 1000
+        print(f"{litros} l equivale a {mililitros} ml")
+
+    elif opcao == '7':
+        metros_cubicos = float(input("Digite o valor em metros cúbicos: "))
+        litros = metros_cubicos * 1000
+        print(f"{metros_cubicos} m³ equivale a {litros} l")
+
+    elif opcao == '8':
+        decimetros_cubicos = float(input("Digite o valor em decímetros cúbicos: "))
+        litros = decimetros_cubicos * 1000
+        print(f"{decimetros_cubicos} dm³ equivale a {litros} l")
+
+    elif opcao == '9':
+        centimetros_cubicos = float(input("Digite o valor em centímetros cúbicos: "))
+        mililitros = centimetros_cubicos
+        print(f"{centimetros_cubicos} cm³ equivale a {mililitros} ml")
+
+    else:
+        print("Opção inválida!")
+
+
 black = "\033[0;30m"
-
 red = "\033[0;31m"
-
 green = "\033[0;32m"
-
 yellow = "\033[0;33m"
-
 blue = "\033[0;34m"
-
 purple = "\033[0;35m"
-
 cyan = "\033[0;36m"
-
 white = "\033[0;37m"
 
 #2
@@ -27,10 +100,8 @@ def limpar():os.system("clear")
 print ("""
 
 Criado por: Wan - 09/08/22 - 10/08/22
-
 Python 3.7
-
-Pydroid
+ATUALIZAÇÃO 09/02/2024
 
 [Aguarde um instante...]
 
@@ -43,32 +114,20 @@ limpar()
 print(f"{red}------Calculadora------")
 
 print(f"""{green}
-
 [01] Somar volume de um cubo
-
 [02] Somar volume de um prisma (3 valores)
-
 [03] Somar volume de um cilindro
-
 [04] Somar massa (Newton)
-
 [05] Somar gastos eletricos (KwH)
-
 [06] Somar porcentagem da perda de peso
-
-[07] Transformação de medidas (Nao funcional...)
-
+[07] Transformação de medidas 
 [08] Porcentagem
-
 [09] Teorema de Pitagoras
-
+[10] Equação Quadratica
 [00] Feedbacks e erros
-
 """)
 
 while True:
-
-    print(" ")
 
     x = input(f"{red}[Selecione]: ")
 
@@ -219,42 +278,8 @@ while True:
         print(" ")
 
     elif x == "07":
-
-        print(" ")
-
-        print("""
-
-        nao esta funcionando...
-
-        [1] Metro cubico para Decimetro cubico (m3/dm3)
-
-        [02] Centimetro cubico para Milimetro cubico (cm3/mm3)
-
-        [03] Decimetro cubico  para Milimetro cubico
-
-        [04] Mililitro para litro (ml/l)
-
-        [05] Litro para centilitro (l/cl)
-
-        [06] Litro para Mililitro (l/ml)
-
-        [07] Metro cubico para Litro (m3/l)
-
-        [08] Decimetro cubico para Litro (dm3/l)
-
-        [09] Centimetro cubico para mililitro (cm3/ml)
-
-        """)
-
-        lks = int(input("Digite a opçao: "))
-
-        if lks == "1":
-
-            vldpdt = int(input("Digite os metros: "))
-
-            cont1 = vldpdt * 1000
-
-            print(f"{cont1} DM3")
+    	print("xx")
+    	transformacao_de_medidas()
 
     elif x == "08":
 
@@ -300,11 +325,20 @@ while True:
 
         print(f"a = {a}")
 
+    elif x == "10":
+    	print(f"{blue}")
+    	a = float(input("Digite o coeficiente a: "))
+    	b = float(input("Digite o coeficiente b: "))
+    	c = float(input("Digite o coeficiente c: "))
+    	print(resolver_equacao_quadratica(a, b, c))
+
+
     elif x == "00":
 
         print(" ")
+        print(f"{purple}")
 
-        print("Instagram para contato: @metalheadkkkk")
+        print("Instagram para contato: @wan.cxx")
 
         print("Telegram para contato: @BaalZevuv6")
 
