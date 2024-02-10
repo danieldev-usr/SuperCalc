@@ -40,6 +40,10 @@ Esta função permite calcular a porcentagem de um valor.
 
 Esta função permite calcular a hipotenusa de um triângulo retângulo com base nos catetos.
 
+### 10 - Equação Quadrática
+
+Esta função permite resolver uma simples equação quadrática com base em 3 variáveis.
+
 ## Instruções de Uso
 
 1. Execute o script em um ambiente Python 3.7 ou superior.
