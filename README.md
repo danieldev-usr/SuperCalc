@@ -56,7 +56,7 @@ Esta função permite calcular a hipotenusa de um triângulo retângulo com base
 
 Para dúvidas, feedbacks ou relatar erros, você pode entrar em contato com o criador da calculadora:
 
-- Instagram: @metalheadkkkk
+- Instagram: @wan.cxx
 
 - Telegram: @BaalZevuv6
 
