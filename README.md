@@ -28,9 +28,9 @@ Esta função permite calcular os gastos elétricos mensais com base no consumo 
 
 Esta função permite calcular a porcentagem de perda de peso com base no peso inicial e peso atual.
 
-### 07 - Transformação de medidas (Nao funcional...)
+### 07 - Transformação de medidas 
 
-Esta função permite realizar transformações de medidas. No entanto, esta função ainda não está funcionando corretamente.
+Esta função permite realizar transformações de medidas.
 
 ### 08 - Porcentagem
 
